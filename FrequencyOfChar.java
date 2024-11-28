@@ -1,13 +1,19 @@
 public class FrequencyOfChar 
 {
+    static int i = 10;
+    int k =0;
+
     public static void method()
     {
-        System.out.println("Static Block");
+        i += 15;
+        // k = 10;
+        System.out.println("Static Block"+i);
     }
     public static void main(String[] args) {
 
         FrequencyOfChar f = new FrequencyOfChar();
-        // f.method();
+        
+        f.method();
         String str = "hey hello hai how are you";
 
         boolean arr[] = new boolean[str.length()];
@@ -44,4 +50,10 @@ class SubClass extends FrequencyOfChar
         FrequencyOfChar.method();
     }
    
+}
+
+interface InnerFrequencyOfChar{
+    
+
+    
 }
